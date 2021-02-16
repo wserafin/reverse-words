@@ -139,6 +139,7 @@ func main() {
 	port := getEnv("APP_PORT", "8080")
 	log.Println("Starting Reverse Api", version, "Release:", release)
 	log.Println("Listening on port", port)
+	log.Println("Listening....")
 	prometheus.MustRegister(totalWordsReversed)
 	prometheus.MustRegister(endpointsAccessed)
 	router := mux.NewRouter()
