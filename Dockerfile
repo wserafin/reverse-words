@@ -1,4 +1,4 @@
-FROM golang:1.15.8
+FROM hub.docker.com/golang:1.15.8
 WORKDIR /go/src/github.com/wserafin/reverse-words/
 COPY main.go .
 RUN go get github.com/gorilla/mux && go get github.com/prometheus/client_golang/prometheus/promhttp
